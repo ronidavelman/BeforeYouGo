@@ -15,19 +15,21 @@ OR
 ```
 
 ### NPM
-#### Coming soon
+Coming soon
 
-## Usage
+## Default Config Options
 
-Call setupIntent() with your configuration options:
-
-For example: setupIntent({"cookies":true, "custom_cookie": true, "custom_cookie_name": "registered"});
-
-| Options        | Default           |
-| ------------- |:-------------:| -----:|
-| Delay      | 0 |
-| col 2 is      | centered      |
-| zebra stripes | are neat      |
+| Options        | Default      |
+| ------------- |:-------------:|
+| delay      | 0 |
+| threshold     | 15      |
+| cookies | false      |
+| cookie_name | 'intentDisabled'      |
+| mobileDisabled | true      |
+| custom_cookie | false      |
+| custom_cookie_name | 'custom'      |
+| timed | false      |
+| timed_delay | 0      |
 
 
 var config = {
@@ -46,13 +48,28 @@ var config = {
 		timedOverlay : function(){console.log('Timed overlay was fired.');}
 	}
 }
-## API Reference
+## Basic Usage
 
-Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
+```
+setupIntent();
+```
 
-## Tests
+## Cookie Usage
+```
+setupIntent({"cookies":true,"custom_cookie": true, "custom_cookie_name": "registered"});
+```
+Uses cookies, with a custom cookie name of "registered". When the registered cookie is set, the modal will not fire. This is useful if you want to disable the modal from firing after it has been closed.
 
-Describe and show how to run the tests with code examples.
+### Setting the cookie to disable the modal
+#### (requires "cookies":true)
+```
+BeforeYouGo_SetCookie(name,value,days)
+```
+For example:
+<li class="closeBtn" onclick="BeforeYouGo_SetCookie('registered','true','5')">X</li>
+
+This will disable the modal for 5 days.
+
 
 ## Contributors
 
