@@ -109,3 +109,10 @@ with
  ```
 $('#myModal').modal('show');
 ```
+
+## Callbacks
+```
+exited: function(){console.log('User exited the window.');}
+fired : function(){console.log('The intent was fired.');}
+timedOverlay : function(){console.log('Timed overlay was fired.');}
+```
