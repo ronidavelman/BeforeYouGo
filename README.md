@@ -3,6 +3,8 @@
 The purpose of this script is to initiate an offer to a user, before they leave the page, or on a timer.
 Bring value to your users during your last chance before they go.
 
+Give it a try: https://ronidavelman.github.io/BeforeYouGo/Demo/index.html
+
 ## Installation
 
 ### Manual
