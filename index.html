@@ -1,16 +1,20 @@
 <html>
+  <head>
+    <title>BeforeYouGo</title>
+    <link rel="stylesheet" type="text/css" href="DemoStyle.css">
+    <script src="BeforeYouGo.js"></script>
+    <script>setupIntent({"cookies":true,"custom_cookie": true, "custom_cookie_name": "registered"});</script>
+  </head>
+  <body>
 
-<head>
+      <div id="md" class="modalContainer modalShadow" style="display:none;">
+        <div class="overlay"></div>
+     	  <h2 class="modalText">Before you go!</h2>
+      	<h4 class="modalText">We are offering a free e-book if you sign up!</h4>
+      	<input class="modalInput modalShadow" type="text" placeholder="Your email">
+        <input class="modalSubmit modalShadow" type="submit" value="Sign me up">
+      </div>
 
-<script src="BeforeYouGo.js"></script>
-
-</head>
-<body>
-
-<div id="md" style="display:none;">
-MODAL
-</div>
-
-</body>
+  </body>
 
 </html>
