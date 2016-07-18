@@ -6,10 +6,13 @@ The purpose of this script is to initiate an offer to a user, before they leave 
 
 ### Manual
 
-Add <script src="BeforeYouGo.js"></script>
-
-#### OR
+```
+<script src="BeforeYouGo.js"></script>
+```
+OR
+```
 <script src="BeforeYouGo.min.js"></script>
+```
 
 ### NPM
 #### Coming soon
@@ -20,11 +23,11 @@ Call setupIntent() with your configuration options:
 
 For example: setupIntent({"cookies":true, "custom_cookie": true, "custom_cookie_name": "registered"});
 
-| Options        | Default           | Explanation  |
+| Options        | Default           |
 | ------------- |:-------------:| -----:|
-| Delay      | 0 | Give the user a grace period, before the intent fires. If they re-enter before the delay ends, the modal is not fired. |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+| Delay      | 0 |
+| col 2 is      | centered      |
+| zebra stripes | are neat      |
 
 
 var config = {
